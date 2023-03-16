@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class fibonacci {
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int a=0,b=1;
+        int n,fb;
+        System.out.println("Enter limit");
+        n=sc.nextInt();
+        System.out.print(" "+a+" "+b);
+        for(int i=1;i<n;i++)
+        {
+            fb=a+b;
+            System.out.print(" "+fb);
+            a=b;
+            b=fb;
+
+        }
+    }
+}
