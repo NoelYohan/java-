@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class countingoccurences {
+    public static void main(String[] args) {
+          Scanner sc  = new Scanner(System.in);
+          int n,x,r,count=0;
+        System.out.println("Enter a large number");
+        n=sc.nextInt();
+        System.out.println("Enter the digit to be counted");
+        x=sc.nextInt();
+        while(n>0)
+        {
+            r=n%10;
+            n=n/10;
+            if(r==x)
+                 count++;
+        }
+        System.out.println("Therfore the digit "+x+" has occured  "+count+" times");
+    }
+}
